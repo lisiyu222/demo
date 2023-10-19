@@ -37,6 +37,11 @@
     body {
         text-align: center;
         /* 将文本内容左右居中 */
+        background-color:rgb(212, 229, 239);
+        width:100%;
+        height:100%;
+        
+    
     }
 
     h1 {
@@ -54,70 +59,168 @@
 
     .flex-container {
         display: flex;
+        padding:20px;
     }
 
-    #vis4,
+    #vis4  {
+        text-align: center;
+        /* 将文本内容左右居中 */
+        margin-bottom: 20px;
+        /* 设置图表之间的间距 */
+    }
     #vis7 {
+        flex: 1;
+        padding: 20px;
+        width: 500px;
+        margin-left: 0;
+    }
+
+    #text1 {
         flex: 1;
         padding: 10px;
         width: 50%;
+        text-align: left;
+    }
+
+    #text2 {
+        flex: 1;
+        padding: 20px;
+        width: 50%;
+        text-align: right;
+    }
+
+
+    #text3 {
+        flex: 1;
+        padding: 10px;
+        width: 50%;
+        text-align: left;
+    }
+
+    #text4 {
+        flex: 1;
+        padding: 10px;
+        width: 20%;
+        text-align: right;
+    }
+    #titletext {
+        flex: 1;
+        padding: 10px;
+        text-align: left;
+        font-size: 36px;
     }
 </style>
 
 <body>
 
-    <h1 name="dataset">Dataset<p class="content">
-            The dataset provided at <a href="https://www.kaggle.com/code/tobniislam/american-university-eda/input">The
-                Dataset</a>
-                
-            ,which contains information about the number of colleges and universities in the United States by state.
 
-
-        </p>
-    </h1>
-
-
-
-    <h1>Scatter diagram-Public&Private University of US
-    </h1>
+    <h2 id="titletext">A Scatter Map of Public vs. Private Universities in US </h2>
     <div class="flex-container">
         <div id="vis3"></div>
+        <div id="text1">
+            <p>This is a description of the scatter map of public and private universities. On this map, you will see two different colored dots representing different types of universities. The blue dots represent public schools, which are funded and operated by the government. This means they might have more sources of funding, typically charge lower fees, and often cater to a large number of students.</p>
+    
+            <p>On the other hand, the red dots represent private schools. Private schools are supported by private funds, donations, or tuition fees. These schools may offer a more specialized education, closely associated with a particular religion or educational philosophy. Since they are not government-funded, private schools might have higher tuition fees, but they may also offer more scholarships or financial aid opportunities.</p>
+            
+            <p>By looking at this scatter map, you can easily distinguish between public and private universities. This helps to understand the distribution of higher education in a region or country, as well as the ratio between public and private institutions.</p>
+        </div>
+    </div>
+    
+    <h2 id="titletext">Comparative Insights: Public vs. Private University Distribution by State </h2>
+    <div class="flex-container">
+        <div id="text1">
+            <p>This is a description of the bar chart depicting public and private universities. On this chart, you can see two distinct shades of blue representing the two types of universities. Light blue bars represent public universities, while dark blue bars represent private universities.</p>
+    
+            <p>Through this bar chart, one can clearly see the number of public and private universities in each state and their respective proportions.</p>
+            
+            <p>Click on the bar graph to view specific data.</p>
+        </div>
+    
         <div id="vis8"></div>
     </div>
+    
 
-
-    <h1>Scatter diagram-University Location of US
-    </h1>
+    <h2 id="titletext">Geospatial Distribution of Higher Education Institutions </h2>
     <div class="flex-container">
+        <div id="text1">
+            <p>This captivating map employs a vivid palette of colors to distinguish between different states, offering viewers an intuitive glimpse into the distribution of universities across each region.</p>
+            
+            <p>At a single glance, the spread and density of higher educational institutions come alive, painting a comprehensive picture of academia's landscape within the nation.</p>
+            
+            <p>Notably, while the map provides valuable insights into the geographical distribution of these universities, it doesn't differentiate between public and private institutions. Thus, while it captures the broader academic footprint, nuances like the public-private divide remain a tale for another canvas.</p>
+        </div>
         <div id="vis4"></div>
-        <div id="vis7"></div>
     </div>
 
 
-    <h1>Number of university in each state 
-    </h1>
-    <div id="vis5"></div>
+    <h2 id="titletext">A Deep Dive into the Top Ten U.S. States Funding Higher Education</h2>
+    <div class="flex-container">
+        <div id="vis7"></div>
+        <div id="text1">
+            <p>This bar chart unveils a captivating academic phenomenon: identifying the top ten states in the U.S. with the most significant investments in higher education. Through meticulous data analysis and graphical representation, the chart vividly displays the financial commitments of these ten states, allowing us to intuitively compare and grasp their dedication in the realm of education.
 
-    <h1>Number of university in each state
-    </h1>
+            <p>Moreover, the design and layout of the chart provide profound insights into the relative standings of these states concerning university education. Against this backdrop, we can delve into the investment strategies of each state and gauge how they stack up against the others. This offers a comprehensive, multi-dimensional view, shedding light on the dynamics and trends within this pivotal educational sector.
+                
+            <p>In essence, this bar chart is more than just a presentation of data; it serves as a window through which we can deeply understand the intricacies and evolution of higher education in the U.S., better equipping us to anticipate its future implications and significance.
+        </div>
+        
+    </div>
+
+    <h2 id="titletext">  A Colorful Insight into U.S. University Distributions </h2>
+    <div class="flex-container">
+        <div id="text1">
+            <p>This vivid geographical representation provides an insightful journey into the educational landscape of the United States. The map titled "The University Numbers per State of USA" uses a spectrum of color intensities to denote the concentration of universities in each state. As you navigate through the varying shades of green to deep blue, it becomes evident that the darker the hue, the higher the number of academic institutions nestled within that particular state.
+
+            <p>At the forefront, states with the deepest blue tones, like those found on the northeastern coast, stand as educational powerhouses, boasting a rich density of universities. Meanwhile, the milder shades present across the vast expanse of the nation signify states with fewer institutions. Texas, with its commanding size, makes a notable appearance in a rich shade, indicating its significant academic presence.
+
+            <p>This map doesn't just showcase numbers—it tells a story. It narrates the tale of academic pursuit, regional educational investments, and the varying emphasis different states place on higher education. In essence, it's a captivating visual dialogue between geography and academia, where color becomes the language.
+            
+        </div>
+
+        <div id="vis5"></div>
+    </div>
+
+    
+
+    <h2 id="titletext"> Geographical Distribution and Density Trends of Higher Education Institutions in the United States </h2>
+    <div class="flex-container">
     <div id="vis6"></div>
+        <div id="text1"> 
+            <p>This map delves deeply into the distribution density and geographical locations of American universities. Through the vivid red dots, we are given a comprehensive view of the geographical concentration trend of universities. Compared to the traditional representation of total quantities within states, it provides us with a more detailed perspective.
+
+            <p>The title "University Location of USA" in the map clearly states its theme—it's a map detailing the specific locations of universities. At first glance, you're drawn to the various-sized red dots scattered across the map. These dots are not placed randomly but are precisely marked according to the actual locations of the universities. The size of the dots offers a clear picture: larger dots indicate regions with a higher concentration of universities, serving as educational hotspots; whereas smaller dots denote areas with fewer universities, but they still add color to the map.
+
+            <p>Of particular note is the eastern coastal area where the red dots are noticeably more clustered, especially in the New England region, indicating it as a significant hub for higher education in the USA. In the Midwest, even though the universities are more spread out, their distribution still outlines some of the major cities and transportation hubs.
+
+        </div>
+    </div>
+    </div>
+
+    <h1 name="dataset">Dataset</h1><p class="content" id="text1">
+        The dataset provided at <a href="https://www.kaggle.com/code/tobniislam/american-university-eda/input">The
+            Dataset</a>
+            
+        ,which contains information about the number of colleges and universities in the United States by state.
+
+    
+
+
     <script>
 
 
 
         const spec3 = {
-            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+         
             "title": "Public & Private University Location of USA",
-            "width": 500,
-            "height": 300,
+            "width": 800,
+            "height": 600,
             "layer": [
                 {
                     "data": {
                         "url": "https://raw.githubusercontent.com/lisiyu222/assign2_1013/main/us-10m.json",
                         "format": { "type": "topojson", "feature": "states" }
                     },
-                    "transform": [{ "calculate": "datum.State", "as": "state" }],
-                    "projection": { "type": "albersUsa" },
+                    
                     "mark": { "type": "geoshape", "stroke": "#121111", "fill": "#97ccad" },
                     "encoding": {
                         "color": { "field": "", "type": "nominal", "legend": null },
@@ -165,18 +268,15 @@
 
 
         const spec4 = {
-            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
             "title": "University Location of USA",
-            "width": 500,
-            "height": 300,
+            "width": 1000,
+            "height": 600,
             "layer": [
                 {
                     "data": {
                         "url": "https://raw.githubusercontent.com/lisiyu222/assign2_1013/main/us-10m.json",
                         "format": { "type": "topojson", "feature": "states" }
                     },
-                    "transform": [{ "calculate": "datum.State", "as": "state" }],
-                    "projection": { "type": "albersUsa" },
                     "mark": { "type": "geoshape" },
                     "encoding": {
                         "color": { "field": "id", "type": "nominal", "legend": null },
@@ -226,8 +326,8 @@
             "repeat": { "row": ["Count"] },
             "resolve": { "scale": { "color": "independent" } },
             "spec": {
-                "width": 500,
-                "height": 300,
+                "width": 800,
+                "height": 600,
                 "data": {
                     "url": "https://raw.githubusercontent.com/lisiyu222/assign2_1013/main/IPEDS_data_with_num.csv"
                 },
@@ -260,8 +360,8 @@
         const spec6 = {
             "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
             "title": "University Location of USA",
-            "width": 500,
-            "height": 300,
+            "width": 800,
+            "height": 600,
             "layer": [
                 {
                     "data": {
@@ -320,9 +420,10 @@
 
 
         const spec7 = {
-            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Bar chart with text labels. Set domain to make the frame cover the labels.",
   "data": {"url": "https://raw.githubusercontent.com/lisiyu222/assign2_1013/main/TOP10STATE.csv"},
+  "width": 600,
+    "height": 400,
   "encoding": {
     "y": {"field": "State", "type": "nominal","sort":"-x","title":"Top10 State"},
     "x": {"field": "__count", "type": "quantitative", "scale": {"domain": [0, 130]},"title":"Number of university"}
@@ -346,69 +447,42 @@
         vegaEmbed("#vis7", spec7, { mode: "vega-lite" }).then(console.log).catch(console.warn);
 
 
-        const spec8 = {
-            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {"url": "https://raw.githubusercontent.com/lisiyu222/assign2_1013/main/IPEDS_data_with_num.csv"},
+        const spec8 ={
+  "data": {
+    "url": "https://raw.githubusercontent.com/lisiyu222/assign2_1013/main/IPEDS_data_with_num.csv"
+  },
   "mark": "bar",
   "encoding": {
-    "x": {
-      "field": "State",
-      "type": "ordinal",
-      "title": "State"
-    },
-    "y": {
-      "aggregate": "count",
-      "type": "quantitative"
-    },
+    "x": {"field": "State", "type": "ordinal", "title": "State"},
+    "y": {"aggregate": "count", "type": "quantitative"},
     "color": {
       "field": "Control of institution",
       "type": "nominal",
       "scale": {
         "domain": ["Public", "Private not-for-profit"],
-        "range": [ "#aec7e8", "#1f77b4"]
+        "range": ["#aec7e8", "#1f77b4"]
       },
       "title": "No. of university"
     },
-        "tooltip": [
-          {"field": "Control of institution", "title": "Control"},
-          {"aggregate": "count",
-          "title": "No"},
-          {"field": "State",
-          "title": "State"},
-
-        ]
-
-
-    
-
+    "tooltip": [
+      {"field": "Control of institution", "title": "Control"},
+      {"aggregate": "count", "title": "No"},
+      {"field": "State", "title": "State"}
+    ]
   },
-
-    "layer": [{
-    "mark": "bar"
-  }, {
-    "mark": {
-      "type": "text",
-
-      "align": "left",
-      "baseline": "middle",
-      "dx": 5
-      
-    },
-    "encoding": {
-      "text": {"aggregate": "count", "type": "quantitative"},
-      "order": {
-      "field": "Control of institution",
-      "type": "nominal",
-      "scale": {
-        "domain": ["Private not-for-profit", "Public"],
-        "range": [ "#aec7e8", "#1f77b4"]
-      }
-       }
-      
-    }
-  }]
+  "layer": [
+    {"mark": "bar"},
+    {
+      "mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 5},
+      "encoding": {
+        "order": {
+          "field": "Control of institution",
+          "type": "nominal"
         }
-
+      }
+    }
+  ]
+}
 
         vegaEmbed("#vis8", spec8, { mode: "vega-lite" }).then(console.log).catch(console.warn);
     </script>
