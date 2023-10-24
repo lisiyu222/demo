@@ -152,26 +152,32 @@
     <h2 id="titletext">Geospatial Distribution of Higher Education Institutions </h2>
     <div class="flex-container">
         <div id="text1">
-            <p>This captivating map employs a vivid palette of colors to distinguish between different states, offering viewers an intuitive glimpse into the distribution of universities across each region.</p>
+            <p>This is a map that displays the geographic locations of universities in various states of the USA. Each dot represents the location of a university. From the map, it is evident that the distribution of universities in the USA is not even. The northeastern region, California, and Texas have a particularly high number of universities, while in some Midwestern states, the universities are more dispersed.</p>
             
-            <p>At a single glance, the spread and density of higher educational institutions come alive, painting a comprehensive picture of academia's landscape within the nation.</p>
+            <p>Analysis:</p>
+            <p>1. Concentration in the Northeast: From the map, one can observe that the northeastern part of the USA, especially states like New York, Pennsylvania, and Massachusetts, has a dense distribution of universities. This may be related to the population density, historical background, and economic development of the region</p>
+            <p>2. California and Texas: California and Texas, being two of the most populous states in the USA, also display a significant number of university locations.</p>
+            <p>3. Sparse in the Midwest: Compared to the East Coast and some parts of the South, certain states in the Midwest, such as Wyoming and Montana, have a more sparse distribution of universities.</p>
+            <p>4. Color Differentiation: The map uses different background colors to differentiate between states, helping users clearly understand the geographic location of the universities and their corresponding states.</p>
             
-            <p>Notably, while the map provides valuable insights into the geographical distribution of these universities, it doesn't differentiate between public and private institutions. Thus, while it captures the broader academic footprint, nuances like the public-private divide remain a tale for another canvas.</p>
+            <p>Hovering the mouse over the respective points on the map can reveal the specific name of the university and its state, allowing easy access to detailed information about public and private universities.</p>
         </div>
         <div id="vis4"></div>
     </div>
 
 
-    <h2 id="titletext">A Deep Dive into the Top Ten U.S. States Funding Higher Education</h2>
+    <h2 id="titletext">Top 10 states in the U.S. for number of universities</h2>
     <div class="flex-container">
         <div id="vis7"></div>
         <div id="text1">
-            <p>This bar chart unveils a captivating academic phenomenon: identifying the top ten states in the U.S. with the most significant investments in higher education. Through meticulous data analysis and graphical representation, the chart vividly displays the financial commitments of these ten states, allowing us to intuitively compare and grasp their dedication in the realm of education.
+            <p>This is a bar chart illustrating the number of universities in ten US states. The chart enumerates the ten states with the highest number of universities, detailing the exact count for each state. This graphical representation offers a lucid visual insight, and assisting in discerning which states boast a higher concentration of universities and which have relatively fewer. Ranging from New York with 122 institutions to Michigan's 50, the chart underscores the geographical distribution patterns of higher education in the United States.</p>
 
-            <p>Moreover, the design and layout of the chart provide profound insights into the relative standings of these states concerning university education. Against this backdrop, we can delve into the investment strategies of each state and gauge how they stack up against the others. This offers a comprehensive, multi-dimensional view, shedding light on the dynamics and trends within this pivotal educational sector.
-                
-            <p>In essence, this bar chart is more than just a presentation of data; it serves as a window through which we can deeply understand the intricacies and evolution of higher education in the U.S., better equipping us to anticipate its future implications and significance.
-        </div>
+            <p>Analysis: </p>
+            <p>1. New York Takes the Lead: New York stands at the forefront with a count of 122 universities, surpassing other states.</p>
+            <p>2. Pennsylvania Follows Closely: Pennsylvania claims the second spot with a total of 114 institutions.</p>
+            <p>3. California and Texas: California and Texas are respectively ranked third and fourth, boasting 93 and 70 universities.</p>
+            <p>4. Comparable Numbers in Other States: The states ranking from fifth to tenth, namely Ohio, Massachusetts, Illinois, Florida, North Carolina, and Michigan, exhibit university counts that are closely clustered, all falling between 50 and 60 institutions.</p>
+            <p>5. Overall Distribution: The chart clearly indicates a significant disparity in the number of universities across different states in the US.</p>
         
     </div>
 
@@ -431,8 +437,8 @@
         const spec7 = {
   "description": "Bar chart with text labels. Set domain to make the frame cover the labels.",
   "data": {"url": "https://raw.githubusercontent.com/lisiyu222/assign2_1013/main/TOP10STATE.csv"},
-  "width": 600,
-    "height": 400,
+  "width": 800,
+    "height": 600,
   "encoding": {
     "y": {"field": "State", "type": "nominal","sort":"-x","title":"Top10 State"},
     "x": {"field": "__count", "type": "quantitative", "scale": {"domain": [0, 130]},"title":"Number of university"}
