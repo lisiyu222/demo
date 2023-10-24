@@ -84,11 +84,11 @@
     }
 
     #text2 {
-    flex: 1;
-    padding: 20px;
-    width: 50%;
-    text-align: center; /* 将文字居中 */
-    font-size: 18px;    /* 设置字体大小为18px */
+        flex: 1;
+        padding: 20px;
+        width: 90%;
+        text-align: left;
+
     }
 
 
@@ -131,34 +131,37 @@
 Funded primarily by state governments, public universities often offer lower tuition rates, especially for in-state students. These institutions frequently serve as large-scale entities, enrolling a substantial number of students across diverse academic programs. When compared to private universities, some public institutions might present slightly more lenient admission standards, particularly for residents of the state. A hallmark of public universities is their close ties to their respective states, emphasizing the delivery of quality education to in-state students.</p>
              <p>Private Universities:
 These institutions derive their financial sustenance predominantly from tuition, donations, and investments, resulting in tuition rates that generally surpass those of public universities. The size of private universities varies greatly, ranging from small liberal arts colleges to extensive research-oriented universities. Many elite private universities maintain rigorous admission criteria, fostering a competitive applicant pool. A distinctive trait of private universities is their emphasis on fostering a unique community culture, valuing traditions, honor, and extensive alumni networks.</p>
-             
+         
              </div>
     </div>
     
         
     
     <h2 id="titletext">A Scatter Map of Public vs. Private Universities in US </h2>
+    <div id="text2">
+        <p>This illustration delineates the geographical distribution of public and private non-profit universities across the United States. Public universities are symbolized by red dots, while blue dots represent private non-profit institutions. Overall, both public and private non-profit universities are ubiquitously distributed throughout the nation. However, it is noteworthy that the density of universities in the northeastern region, particularly along the East Coast, significantly surpasses that in other areas. Additionally, vast regions in the Midwest, such as Nevada and Montana, demonstrate a relatively sparse university presence. This distribution may be reflective of various factors, including historical contexts, population density, and economic conditions.</p>
+
+        <p>Analysis:</p>
+        <p>1. Geographical Distribution: Universities are spread across the entire nation, with certain regions exhibiting a higher density, notably the East Coast and, in particular, the Northeast.</p>
+        <p>2. Public Universities: The red dots, representing public universities, show a consistent distribution across numerous states, indicating a widespread service by public educational institutions to the nation.</p>
+        <p>3. Private Non-Profit Universities: The blue dots, symbolizing private non-profit institutions, appear to be more concentrated in specific regions, such as the Northeast. This may be correlated with the historical, cultural, and economic backdrop of the region.</p>
+        <p>4. Low-Density Regions: Some states in the Midwest, like Nevada and Montana, seem to exhibit a lower density of universities, which might be associated with their lower population density and expansive land area.</p>
+
+        <p>Hovering over the respective dots on the map will reveal details of this scatter plot, facilitating an easy examination of information pertaining to both public and private universities.</p>   
+        <p>Clicking on the icon located at the upper right corner of the map allows for exclusive viewing of either public or private institutions.</p>  
+
+    </div>
     <div class="flex-container">
         <div id="vis3"></div>
-        <div id="text1">
-            <p>This illustration delineates the geographical distribution of public and private non-profit universities across the United States. Public universities are symbolized by red dots, while blue dots represent private non-profit institutions. Overall, both public and private non-profit universities are ubiquitously distributed throughout the nation. However, it is noteworthy that the density of universities in the northeastern region, particularly along the East Coast, significantly surpasses that in other areas. Additionally, vast regions in the Midwest, such as Nevada and Montana, demonstrate a relatively sparse university presence. This distribution may be reflective of various factors, including historical contexts, population density, and economic conditions.</p>
-    
-            <p>Analysis:</p>
-            <p>1. Geographical Distribution: Universities are spread across the entire nation, with certain regions exhibiting a higher density, notably the East Coast and, in particular, the Northeast.</p>
-            <p>2. Public Universities: The red dots, representing public universities, show a consistent distribution across numerous states, indicating a widespread service by public educational institutions to the nation.</p>
-            <p>3. Private Non-Profit Universities: The blue dots, symbolizing private non-profit institutions, appear to be more concentrated in specific regions, such as the Northeast. This may be correlated with the historical, cultural, and economic backdrop of the region.</p>
-            <p>4. Low-Density Regions: Some states in the Midwest, like Nevada and Montana, seem to exhibit a lower density of universities, which might be associated with their lower population density and expansive land area.</p>
-
-            <p>Hovering over the respective dots on the map will reveal details of this scatter plot, facilitating an easy examination of information pertaining to both public and private universities.</p> 
-            <p>Clicking on the icon located at the upper right corner of the map allows for exclusive viewing of either public or private institutions.</p>  
-        </div>
+        
     </div>
     
     <h2 id="titletext">Distribution of Public and Private Not-for-Profit Universities by U.S. State </h2>
     <div class="flex-container">
-     <div id="vis8"></div>
+        <div id="vis8"></div>
+        
     </div>
-    <div id="text1">
+    <div id="text2">
         <p>The bar chart depicts the distribution of public and private not-for-profit universities across the states in the United States. The Y-axis represents the number of universities, while the X-axis indicates the various states; light blue corresponds to public universities and dark blue to private ones. A noticeable disparity in the number of universities exists among different states. In most states, the number of public universities surpasses that of private not-for-profit universities, though there are exceptions.</p>
 
         <p>Analysis:</p>
@@ -169,8 +172,7 @@ These institutions derive their financial sustenance predominantly from tuition,
         
         <p>Hovering over the bars on the chart will display specific data, facilitating an easy comparison of the precise number of public/private universities in each state.</p>
     </div>
-
-
+    
 
     <h2 id="titletext">Geospatial Distribution of Higher Education Institutions </h2>
     <div class="flex-container">
@@ -253,8 +255,8 @@ These institutions derive their financial sustenance predominantly from tuition,
         const spec3 = {
          
             "title": "Public & Private University Location of USA",
-            "width": 800,
-            "height": 600,
+            "width": 1000,
+            "height": 800,
             "layer": [
                 {
                     "data": {
@@ -293,7 +295,7 @@ These institutions derive their financial sustenance predominantly from tuition,
                             "field": "Control of institution",
                             "type": "nominal",
                             "scale": {
-                                "domain": ["Public", "Private"],
+                                "domain": ["Public", "Private not-for-profit"],
                                 "range": ["steelblue", "red"]
                             } 
                         },
@@ -322,8 +324,8 @@ These institutions derive their financial sustenance predominantly from tuition,
 
         const spec4 = {
             "title": "University Location of USA",
-            "width": 1000,
-            "height": 600,
+            "width": 600,
+            "height": 400,
             "layer": [
                 {
                     "data": {
